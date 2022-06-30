@@ -1,0 +1,99 @@
+* *::after *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #FFA509, #008080);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(90px);
+    grid-auto-rows: minmax(50px, auto);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+    top: 28%;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.6);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(90px);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.buttons>button {
+    width: 95px;
+    height: 75px;
+    background-color: #EBEFED;
+    min-height: 50px;
+    outline: none;
+    border: 1px solid white;
+    border-top: 1px solid white;
+    font-size: 18.5px;
+    font-weight: bold;
+}
+
+.buttons>button:hover {
+    background-color: #FFA509;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons>button#spantwo {
+    background: teal;
+    padding-left: -15px;
+    font-size: 25px;
+
+}
+
+.buttons>button#spanthree {
+    background: #FFA509;
+    width: 176px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.buttons>button#spanthree:hover {
+    background-color: #EBEFED;
+    color: #FFA509;
+}
+
+.buttons>button#spantwo:hover {
+    background: #EBEFED;
+    color: teal;
+}
+
+button#spanfour {
+    background-color: teal;
+    color: black;
+
+}
+
+button#spanfour:hover {
+    color: teal;
+    background-color: #EBEFED;
+}
+
+.container>#display {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 55px;
+    width: 336px;
+    padding-top: 49.5px;
+    position: absolute;
+    color: white;
+    top: -28%;
+    border-bottom: 1px solid whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: end;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align-last: right;
+}
